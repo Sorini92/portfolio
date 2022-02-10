@@ -42,14 +42,10 @@
     }
     .portfolio {
         &__wrapper {
-            grid-template-columns: repeat(auto-fit, 280px);
-            grid-auto-rows: 280px;
+            grid-template-columns: repeat(auto-fit, 360px);
+            grid-auto-rows: 360px;
             justify-content: space-around;
             row-gap: 35px;
-            .horizontal, .vertical {
-                grid-row: unset;
-                grid-column: unset;
-            }
         }
     }
     .contacts {
@@ -227,7 +223,7 @@
         }
     }
     .promo {
-        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+        background: url('../img/main.jpg') no-repeat 57%/cover;
         &__btns {
             margin-top: 32px;
         }

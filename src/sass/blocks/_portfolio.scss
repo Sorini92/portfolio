@@ -4,28 +4,60 @@
         margin-top: 60px;
         margin-bottom: 60px;
         display: grid;
-        grid-template: repeat(2, 280px) / repeat(4, 280px);
-        grid-auto-rows: 280px;
-        gap: 5px;
-        .vertical {
-            grid-row: 1 / 3;
-            grid-column: 4 / 5;
-        }
-        .horizontal {
-            grid-row: 2 / 3;
-            grid-column: 2 / 4;
-        }
+        grid-template: repeat(2, 360px) / repeat(3, 360px);
+        grid-auto-rows: 360px;
+        gap: 30px;
     }
     &__item {
-        transition:  0.1s all;
-        img {
+        width: 360px;
+        height: 360px;
+        position: relative;
+        border: 1px solid $main-color;
+        perspective: 1000px;
+        &_back {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
         }
-        &:hover {
-            transform: scale(1.05);
-            box-shadow: 3px 3px 20px black;
+        &_front {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s;
+            backface-visibility: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &_descr {
+            position: absolute;
+            width: 300px;
+            top: 40px;
+            left: 40px;
+            font-size: 18px;
+        }
+        &_github {
+            position: absolute;
+            top: 300px;
+            left: 40px;
+            color: $main-color;
+            font-size: 25px;
+        }
+        &_site {
+            font-size: 25px;
+            position: absolute;
+            top: 300px;
+            left: 280px;
+            color: $main-color;
         }
     }
     &__resumelink {
@@ -56,4 +88,11 @@
             color: white;
         }
     }
+}
+
+.portfolio__item:hover .portfolio__item_front {
+    transform: rotateY(180deg);
+}
+.portfolio__item:hover .portfolio__item_back {
+    transform: rotateY(360deg);
 }
