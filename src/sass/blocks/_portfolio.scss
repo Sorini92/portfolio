@@ -4,13 +4,13 @@
         margin-top: 60px;
         margin-bottom: 60px;
         display: grid;
-        grid-template: repeat(2, 360px) / repeat(2, 555px);
-        grid-auto-rows: 360px;
+        grid-template: repeat(2, 250px) / repeat(3, 355px);
+        grid-auto-rows: 250px;
         gap: 30px;
     }
     &__item {
-        width: 555px;
-        height: 360px;
+        width: 355px;
+        height: 250px;
         position: relative;
         border: 1px solid $main-color;
         perspective: 1000px;
@@ -45,23 +45,23 @@
         }
         &_descr {
             position: absolute;
-            width: 480px;
+            width: 310px;
             top: 40px;
             left: 40px;
             font-size: 18px;
         }
         &_github {
             position: absolute;
-            top: 300px;
-            left: 40px;
+            top: 200px;
+            left: 20px;
             color: $main-color;
             font-size: 25px;
         }
         &_site {
             font-size: 25px;
             position: absolute;
-            top: 300px;
-            left: 470px;
+            top: 200px;
+            left: 270px;
             color: $main-color;
         }
     }
