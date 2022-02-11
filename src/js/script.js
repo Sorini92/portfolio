@@ -22,32 +22,6 @@ document.addEventListener('keydown', (e) => {
     } 
 })
 
-/* const changeImages = () => {
-    const blocks = document.querySelectorAll('.portfolio__item');
-    console.log();
-    blocks.forEach((block) => {
-        block.addEventListener('mouseover', () => {
-            const back = block.querySelectorAll('.portfolio__item_back'),
-                  front = block.querySelectorAll('.portfolio__item_front');
-            
-            front.forEach(item => item.style.visibility = 'hidden');
-
-            back.forEach(item => item.style.visibility = 'visible');
-        });
-
-        block.addEventListener('mouseout', () => {
-            const p = block.querySelectorAll('.portfolio__item_back'),
-                  front = block.querySelectorAll('.portfolio__item_front');
-            
-            front.forEach(item => item.style.visibility = 'visible');
-
-            p.forEach(item => item.style.visibility = 'hidden');
-        });
-    });
-};
-
-changeImages(); */
-
 //smooth scroll
 $(window).scroll(function() {
     if ($(this).scrollTop() > 1000) {
