@@ -33,7 +33,7 @@
                     position: absolute;
                     top: -16px;
                     left: 0;
-                    background-color: #000;
+                    background-color: $main-color;
                 }
             }
         }
@@ -45,7 +45,7 @@
             height: 1px;
             width: 45px;
             position: absolute;
-            background-color: #000;
+            background-color: $main-color;
             top: 48px;
         }
         &-head {

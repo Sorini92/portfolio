@@ -8,7 +8,8 @@
     }
     &__item {
         padding: 30px 30px 25px 30px;
-        border: 1px solid #000;
+        border: 1px solid $main-color;
+        box-shadow: 10px 10px 2px 1px grey;
     }
     &__logo {
         img {
