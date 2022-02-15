@@ -46,9 +46,10 @@
         }
         &_descr {
             position: absolute;
-            width: 310px;
-            top: 40px;
-            left: 40px;
+            width: 355px;
+            text-align: center;
+            top: 100px;
+            left: 0;
             font-size: 18px;
         }
         &_github {
@@ -62,7 +63,7 @@
             font-size: 25px;
             position: absolute;
             top: 200px;
-            left: 270px;
+            left: 285px;
             color: $main-color;
         }
     }
