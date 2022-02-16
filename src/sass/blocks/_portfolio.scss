@@ -69,6 +69,10 @@
     }
     &__resumelink {
         text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     &__resumeimg {
         display: block;
@@ -76,9 +80,9 @@
         margin: 0 auto;
     }
     &__btn {
-        margin-top: 15px;
+        margin-left: 5px;
         display: inline-block;
-        padding: 15px 1.87vw;
+        padding: 10px 1.87vw;
         font-family: 'Roboto', 'Arial', sans-serif;
         font-size: 18px;
         font-weight: bold;
